@@ -25,7 +25,10 @@ function QR({ url }) {
         <div className="qrcard">
           <div className="actualQr">
             {!url ? (
-              <img src="src\assets\Bob_Bear 27s.png" width="200px" />
+              <img
+                src="https://lh3.googleusercontent.com/pw/AP1GczP877yf4bxBBTe2-_maTfgopCTwi2bJO-aBylbrLvGRYgY4cTP3WfDm48EZ-TdueSW0O5NUAZ-rGsMDIbaNxgnNyhKLZSkadO_YvVFPaIIPYWM86CoHbbmjkG9aF8UZopA8PhDILyz7oyY-3V4Dkgu4=w552-h552-s-no-gm?authuser=0"
+                width="200px"
+              />
             ) : (
               <img src={url} />
             )}
