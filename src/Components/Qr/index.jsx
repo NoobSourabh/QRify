@@ -40,10 +40,22 @@ function QR({ url }) {
           <p>Download</p>
         </div>
         <div>
-          <FaLinkedin className="links" />
+          <a
+            href="https://www.linkedin.com/in/your-linkedin-profile"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedin className="links" />
+          </a>
         </div>
         <div>
-          <FaGithub className="links" />
+          <a
+            href="https://github.com/NoobSourabh"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGithub className="links" />
+          </a>
         </div>
       </div>
     </div>

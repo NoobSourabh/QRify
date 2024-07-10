@@ -5,3 +5,8 @@ body {
     linear-gradient(rgba(255, 255, 255, 0.834) 1px, transparent 1px);
   background-size: 50px 50px; /* Adjust size to match the square dimensions */
 }
+
+a:link{
+color:none;
+text-decoration: none;
+}
