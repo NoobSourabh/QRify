@@ -45,11 +45,15 @@ img{
 }
 
 .btn{
-    margin-top: 2rem;
+    /* margin-top: 2rem; */
     width: fit-content;
     padding: 0.2px 55px 0.2px 55px;
     color: white;
     border-radius: 1rem;
     background-color:#305484 ;
     cursor: pointer;
+}
+
+.links{
+font-size: 2rem;
 }

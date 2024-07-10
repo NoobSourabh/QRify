@@ -1,5 +1,9 @@
 import React from "react";
 import "./styles.css";
+import { FaGithub } from "react-icons/fa6";
+
+import { FaLinkedin } from "react-icons/fa";
+
 import QRCode from "qrcode";
 function QR({ url }) {
   const donwloadQRCode = async () => {
@@ -11,7 +15,7 @@ function QR({ url }) {
       link.click();
       document.removeChild(link);
     } catch (e) {
-      console.log(error);
+      console.log(e);
     }
   };
   return (
@@ -20,12 +24,24 @@ function QR({ url }) {
         <div className="heading">Scan the QR to verify the URL</div>
         <div className="qrcard">
           <div className="actualQr">
-            <img src={url} />
+            {!url ? (
+              <img src="src\assets\Bob_Bear 27s.png" width="200px" />
+            ) : (
+              <img src={url} />
+            )}
           </div>
         </div>
       </div>
-      <div className="btn" onClick={donwloadQRCode}>
-        <p>Download</p>
+      <div className="bottom">
+        <div className="btn" onClick={donwloadQRCode}>
+          <p>Download</p>
+        </div>
+        <div>
+          <FaLinkedin className="links" />
+        </div>
+        <div>
+          <FaGithub className="links" />
+        </div>
       </div>
     </div>
   );
