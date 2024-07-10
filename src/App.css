@@ -1,0 +1,7 @@
+body {
+  background-color: #f6cc56; /* Adjust color to match the yellow background */
+  background-image:
+    linear-gradient(90deg, rgba(255, 255, 255, 0.834) 1px, transparent 1px),
+    linear-gradient(rgba(255, 255, 255, 0.834) 1px, transparent 1px);
+  background-size: 50px 50px; /* Adjust size to match the square dimensions */
+}

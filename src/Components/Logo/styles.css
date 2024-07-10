@@ -1,0 +1,29 @@
+.logo{
+      margin-top: 20px;
+      font-size: 40px;
+      font-weight: 800;
+      color:white;
+      -webkit-text-stroke: 1px black; /* Thicker text stroke for webkit-based browsers */
+}
+
+.container{
+    display:flex;
+    justify-content: center;
+}
+
+
+
+/* Media query for screens wider than 768px (tablets and desktops) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Media query for screens narrower than 768px (phones) */
+@media only screen and (max-width: 768px) {
+  .logo{
+      margin-top: 20px;
+      font-size: 30px;
+      
+}   
+
+}

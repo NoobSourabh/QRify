@@ -1,0 +1,55 @@
+.flexcard{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* align-items: center; */
+}
+.heading{
+    margin-top: -15px;
+    position: absolute;
+    z-index: 2;
+    padding: 5px;
+    background-color: rgb(204, 250, 204);
+    border: 2px solid rgb(141, 139, 139);
+    border-radius: 2rem;
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.innercard{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.qrcard{
+    
+    display:flex;
+    flex-direction: column;
+    height: 350px;
+    width: 350px;
+    background-color: white;
+    border: 2px solid rgb(141, 139, 139);
+    border-radius: 1rem;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.actualQr{
+padding: 2rem;
+width: fit-content;
+}
+
+img{
+    border-radius: 10px;
+}
+
+.btn{
+    margin-top: 2rem;
+    width: fit-content;
+    padding: 0.2px 55px 0.2px 55px;
+    color: white;
+    border-radius: 1rem;
+    background-color:#305484 ;
+    cursor: pointer;
+}
