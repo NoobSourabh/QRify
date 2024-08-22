@@ -41,7 +41,7 @@ function QR({ url }) {
         </div>
         <div>
           <a
-            href="https://www.linkedin.com/in/your-linkedin-profile"
+            href="https://www.linkedin.com/in/sourabh-chouhan31/"
             target="_blank"
             rel="noopener noreferrer"
           >
