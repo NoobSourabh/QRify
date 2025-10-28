@@ -5,7 +5,7 @@ import QRCode from "qrcode";
 function Body() {
   const [input, setInput] = useState("");
   const [url, setUrl] = useState("");
-
+ 
   const generateQrCode = async () => {
     try {
       const options = {

@@ -1,79 +1,211 @@
-.outercard{
-    margin-top: 60px;
-    display:flex;
-    justify-content: center;
+.outercard {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+  padding: 0 1rem;
 }
 
-.card{
-    background-color: rgb(255, 255, 255);
-    border: 2px solid black ;
-    border-right-width: 6px;
-    border-bottom-width: 6px;
-    border-radius: 1rem;
-    height: 80vh;
-    width:fit-content ;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 2px;
+.card {
+  background-color: #fff;
+  border: 2px solid black;
+  border-right-width: 6px;
+  border-bottom-width: 6px;
+  border-radius: 1rem;
+  height: 80vh;
+  width: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 1rem;
+  box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 1rem;
 }
 
-.content{
-    padding: 2rem;
-    padding-left: 5rem;
-    display: flex;
-    padding-right:2rem;
-    display: block;
-}
-.qrBox{
-    width:80%;
-    height: 100%;
-    background-color: rgb(236, 236, 236);
-    border-radius: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.content {
+  padding: 2rem 2rem 2rem 5rem;
+  display: block;
 }
 
+.qrBox {
+  width: 80%;
+  height: 100%;
+  background-color: rgb(236, 236, 236);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-h1{
-    margin-top: -2rem;
-    font-size: 40px;
-    font-weight: 800;
+h1 {
+  margin-top: -2rem;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
 }
 
 .input-container {
-  display: flex; /* Makes the container a flexbox */
-  width: 300px; /* Stretches the container to 100% width */
-  border-radius: 100px; /* Adds rounded corners with a radius of 4px */
-  margin-bottom: 20px; /* Adds bottom margin for spacing */
+  display: flex;
+  width: 300px;
+  border-radius: 100px;
+  margin-bottom: 20px;
 }
 
 .input-container input {
-  flex: 1; 
+  flex: 1;
   background-color: rgb(239, 239, 239);
-  padding: 10px; 
-  border: rgb(239, 239, 239);
+  padding: 10px;
+  border: none;
   border-radius: 5px;
   outline: none;
-  font-size: 16px; /* Sets the font size of the text */
+  font-size: 16px;
 }
 
+.bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+/* ---------- Tablet (≤ 1024px) ---------- */
+@media only screen and (max-width: 1024px) {
+  .card {
+    height: auto;
+    width: 90%;
+    flex-direction: column;
+    padding: 2rem;
+  }
+
+  .content {
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .qrBox {
+    width: 100%;
+    margin-top: 1.5rem;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 32px;
+    margin-top: 0;
+  }
+
+  .input-container {
+    width: 100%;
+    max-width: 350px;
+    margin: 0 auto 20px auto;
+  }
+}
+
+/* ---------- Mobile (≤ 600px) ---------- */
+@media only screen and (max-width: 600px) {
+  .outercard {
+    margin-top: 30px;
+    padding: 0 0.5rem;
+  }
+
+  .card {
+    width: 100%;
+    padding: 1rem;
+    height: auto;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+  }
+
+  .content {
+    padding: 1rem 0.5rem;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin-top: 0;
+  }
+
+  .qrBox {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 12px;
+  }
+
+  .input-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  .input-container input {
+    font-size: 14px;
+    padding: 8px;
+  }
+}
+
+/* ---------- Small Mobile (≤ 400px) ---------- */
+@media only screen and (max-width: 400px) {
+  .card {
+    border-width: 1.5px;
+    border-right-width: 2px;
+    border-bottom-width: 2px;
+    padding: 0.75rem;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+
+  .input-container {
+    width: 95%;
+  }
+
+  .qrBox {
+    padding: 8px;
+  }
+}
+
+
+
+
+h1 {
+  margin-top: -2rem;
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Tablet view */
 @media only screen and (max-width: 768px) {
-    .outercard{
-        margin-top: 30px;
-    }
-    .card{
-        height: 80vh;
-        width: 90vw;
-        flex-direction: column;
-    }
-
+  h1 {
+    font-size: 32px;
+    line-height: 1.1;
+  }
 }
 
-.bottom{
-    display: flex;
-    align-items:center;
-    justify-content: space-around;
-    margin-top: 2rem;
+/* Mobile view */
+@media only screen and (max-width: 600px) {
+  /* Make headings appear in one line */
+  h1 {
+    font-size: 22px;
+    line-height: 1;
+    margin-top: 0;
+    display: inline;
+    padding-bottom: 0.8rem; /* add space below the heading group */
+  }
+
+  /* Add spacing between inline h1 elements */
+  h1:not(:last-child)::after {
+    content: " ";
+  }
+
+  /* Center the entire heading block */
+  .content {
+    text-align: center;
+  }
+
+  /* Add padding below all headings as a group */
+  .content h1:last-of-type {
+    display: inline-block;
+    padding-bottom: 1.2rem; /* extra space below headings */
+  }
 }
